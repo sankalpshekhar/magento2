@@ -576,7 +576,7 @@ class DataProvider
                     if (!isset($index[$attributeId])) {
                         $index[$attributeId] = [];
                     }
-                        $index[$attributeId][$entityId] = $value;
+                    $index[$attributeId][$entityId] = $value;
                 }
             }
         }
