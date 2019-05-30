@@ -178,7 +178,7 @@ class RequestGenerator
                     } else {
                         $request['queries'][$queryName] = [
                             'name' => $queryName,
-                            'type' => 'matchQuery',
+                            'type' => QueryInterface::TYPE_MATCH,
                             'value' => '$' . $attribute->getAttributeCode() . '$',
                             'match' => [
                                 [
