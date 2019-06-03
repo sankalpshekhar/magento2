@@ -118,6 +118,11 @@ class Config extends \Magento\Eav\Model\Config
     protected $_configFactory;
 
     /**
+     * @var array
+     */
+    private $_productTypesByName;
+
+    /**
      * Constructor
      *
      * @param \Magento\Framework\App\CacheInterface $cache

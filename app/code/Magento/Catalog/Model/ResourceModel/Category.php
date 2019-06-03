@@ -92,6 +92,11 @@ class Category extends AbstractResource
     private $indexerProcessor;
 
     /**
+     * @var array
+     */
+    private $_attributes;
+
+    /**
      * Category constructor.
      * @param \Magento\Eav\Model\Entity\Context $context
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager

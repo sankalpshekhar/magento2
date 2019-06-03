@@ -17,6 +17,40 @@ use Magento\Store\Model\ScopeInterface;
 class Manual implements AlgorithmInterface
 {
     const XML_PATH_RANGE_MAX_INTERVALS = 'catalog/layered_navigation/price_range_max_intervals';
+    /**
+     * @var Algorithm
+     */
+    private $algorithm;
+
+    /**
+     * @var ScopeConfigInterface
+     */
+    private $scopeConfig;
+
+    /**
+     * @var Registry
+     */
+    private $coreRegistry;
+
+    /**
+     * @var \Magento\Catalog\Model\Layer
+     */
+    private $layer;
+
+    /**
+     * @var Render
+     */
+    private $render;
+
+    /**
+     * @var Range
+     */
+    private $range;
+
+    /**
+     * @var Price
+     */
+    private $resource;
 
     /**
      * @param Algorithm $algorithm

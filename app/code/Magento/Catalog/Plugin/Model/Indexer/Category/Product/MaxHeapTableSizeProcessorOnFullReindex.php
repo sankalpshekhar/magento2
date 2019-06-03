@@ -21,6 +21,11 @@ class MaxHeapTableSizeProcessorOnFullReindex
     protected $maxHeapTableSizeProcessor;
 
     /**
+     * @var LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @param MaxHeapTableSizeProcessor $maxHeapTableSizeProcessor
      * @param LoggerInterface $logger
      */
