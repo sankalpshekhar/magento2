@@ -38,6 +38,11 @@ class UpdateQty extends \Magento\Backend\App\Action implements HttpPostActionInt
     protected $resultRawFactory;
 
     /**
+     * @var \Magento\Framework\View\Result\PageFactory
+     */
+    private $resultPageFactory;
+
+    /**
      * @param Action\Context $context
      * @param \Magento\Sales\Controller\Adminhtml\Order\CreditmemoLoader $creditmemoLoader
      * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory

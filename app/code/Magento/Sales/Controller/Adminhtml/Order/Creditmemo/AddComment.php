@@ -44,6 +44,11 @@ class AddComment extends \Magento\Backend\App\Action
     protected $resultRawFactory;
 
     /**
+     * @var \Magento\Framework\View\Result\PageFactory
+     */
+    private $resultPageFactory;
+
+    /**
      * @param Action\Context $context
      * @param \Magento\Sales\Controller\Adminhtml\Order\CreditmemoLoader $creditmemoLoader
      * @param CreditmemoCommentSender $creditmemoCommentSender

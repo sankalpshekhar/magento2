@@ -37,6 +37,11 @@ class Config
     private $sharingEmailLimit;
 
     /**
+     * @var int
+     */
+    private $_sharignTextLimit;
+
+    /**
      * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
      * @param \Magento\Catalog\Model\Config $catalogConfig
      * @param \Magento\Catalog\Model\Attribute\Config $attributeConfig

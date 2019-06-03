@@ -65,6 +65,11 @@ class Collection extends \Magento\Catalog\Model\ResourceModel\Product\Collection
     protected $quoteResource;
 
     /**
+     * @var \Magento\Framework\DataObject
+     */
+    private $_totals;
+
+    /**
      * Collection constructor.
      * @param \Magento\Framework\Data\Collection\EntityFactory $entityFactory
      * @param \Psr\Log\LoggerInterface $logger

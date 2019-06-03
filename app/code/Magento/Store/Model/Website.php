@@ -163,6 +163,11 @@ class Website extends \Magento\Framework\Model\AbstractExtensibleModel implement
      * @var \Magento\Framework\MessageQueue\PoisonPill\PoisonPillPutInterface
      */
     private $pillPut;
+    
+    /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    private $_coreConfig;
 
     /**
      * @param \Magento\Framework\Model\Context $context
