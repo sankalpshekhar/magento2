@@ -84,6 +84,11 @@ class DefaultModel extends \Zend\Captcha\Image implements \Magento\Captcha\Model
     private $words;
 
     /**
+     * @var string
+     */
+    private $word;
+
+    /**
      * @param \Magento\Framework\Session\SessionManagerInterface $session
      * @param \Magento\Captcha\Helper\Data $captchaData
      * @param ResourceModel\LogFactory $resLogFactory
