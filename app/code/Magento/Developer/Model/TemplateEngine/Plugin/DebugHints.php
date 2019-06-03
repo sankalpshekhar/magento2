@@ -73,6 +73,11 @@ class DebugHints
     private $debugHintsParameter;
 
     /**
+     * @var \Magento\Framework\App\Request\Http
+     */
+    private $http;
+
+    /**
      * @param ScopeConfigInterface $scopeConfig
      * @param StoreManagerInterface $storeManager
      * @param DevHelper $devHelper

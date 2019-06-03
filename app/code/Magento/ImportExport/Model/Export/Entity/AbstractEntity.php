@@ -149,6 +149,16 @@ abstract class AbstractEntity
     protected $_storeManager;
 
     /**
+     * @var array
+     */
+    private $_storeIdToCode;
+
+    /**
+     * @var array
+     */
+    private $_invalidRows;
+
+    /**
      * @param \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate
      * @param \Magento\Eav\Model\Config $config
      * @param ResourceConnection $resource
