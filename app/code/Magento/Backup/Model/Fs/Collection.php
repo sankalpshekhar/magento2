@@ -55,7 +55,6 @@ class Collection extends \Magento\Framework\Data\Collection\Filesystem
         $this->_backupData = $backupData;
         parent::__construct($entityFactory);
 
-        $this->_filesystem = $filesystem;
         $this->_backup = $backup;
         $this->_varDirectory = $filesystem->getDirectoryWrite(DirectoryList::VAR_DIR);
 
