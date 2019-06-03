@@ -52,6 +52,11 @@ class DeployStaticFile
     private $tmpDir;
 
     /**
+     * @var Filesystem\Directory\WriteInterface
+     */
+    private $pubStaticDir;
+
+    /**
      * DeployStaticFile constructor
      *
      * @param Filesystem $filesystem
