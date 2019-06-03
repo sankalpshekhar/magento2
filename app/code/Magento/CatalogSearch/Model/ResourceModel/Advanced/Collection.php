@@ -107,6 +107,16 @@ class Collection extends \Magento\Catalog\Model\ResourceModel\Product\Collection
     private $searchOrders;
 
     /**
+     * @var \Magento\Search\Model\SearchEngine
+     */
+    private $searchEngine;
+
+    /**
+     * @var \Magento\CatalogSearch\Model\Advanced\Request\Builder
+     */
+    private $requestBuilder;
+
+    /**
      * Collection constructor
      *
      * @param \Magento\Framework\Data\Collection\EntityFactory $entityFactory
