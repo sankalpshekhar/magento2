@@ -55,6 +55,11 @@ class StockIndex implements StockIndexInterface
     protected $productTypes = [];
 
     /**
+     * @var ProductWebsite
+     */
+    private $productWebsite;
+
+    /**
      * @param StockRegistryProviderInterface $stockRegistryProvider
      * @param ProductRepositoryInterface $productRepository
      * @param ProductWebsite $productWebsite
