@@ -14,6 +14,16 @@ namespace Magento\Catalog\Model\Product\Option\Type\File;
 class ExistingValidate extends \Zend_Validate
 {
     /**
+     * @var array
+     */
+    private $_errors;
+
+    /**
+     * @var array
+     */
+    private $_messages;
+
+    /**
      * @inheritDoc
      *
      * @param string $value File's full path.

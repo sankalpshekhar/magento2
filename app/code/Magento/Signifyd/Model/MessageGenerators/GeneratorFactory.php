@@ -48,6 +48,11 @@ class GeneratorFactory
      * @var string
      */
     private static $guaranteeCancel = 'guarantees/cancel';
+    
+    /**
+     * @var ObjectManagerInterface
+     */
+    private $objectManager;
 
     /**
      * UpdatingServiceFactory constructor.

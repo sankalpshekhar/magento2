@@ -55,6 +55,11 @@ class LinkManagement implements \Magento\Bundle\Api\ProductLinkManagementInterfa
     private $metadataPool;
 
     /**
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
+    private $storeManager;
+
+    /**
      * @param ProductRepositoryInterface $productRepository
      * @param \Magento\Bundle\Api\Data\LinkInterfaceFactory $linkFactory
      * @param \Magento\Bundle\Model\SelectionFactory $bundleSelection

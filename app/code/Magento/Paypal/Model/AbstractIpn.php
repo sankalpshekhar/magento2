@@ -40,6 +40,11 @@ class AbstractIpn
     protected $_curlFactory;
 
     /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @param \Magento\Paypal\Model\ConfigFactory $configFactory
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Magento\Framework\HTTP\Adapter\CurlFactory $curlFactory

@@ -29,6 +29,11 @@ class Factory
     protected $_instances;
 
     /**
+     * @var \Magento\Framework\ObjectManagerInterface
+     */
+    private $_objectManager;
+
+    /**
      * @param \Magento\Framework\ObjectManagerInterface $objectManager
      */
     public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager)

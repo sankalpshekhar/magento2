@@ -72,6 +72,11 @@ class Design implements \Magento\Framework\View\DesignInterface
      * @var \Magento\Framework\App\State
      */
     protected $_appState;
+    
+    /**
+     * @var array
+     */
+    private $_themes;
 
     /**
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager

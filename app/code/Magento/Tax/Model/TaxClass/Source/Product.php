@@ -34,6 +34,11 @@ class Product extends \Magento\Eav\Model\Entity\Attribute\Source\AbstractSource
      * @var \Magento\Eav\Model\ResourceModel\Entity\Attribute\OptionFactory
      */
     protected $_optionFactory;
+    
+    /**
+     * @var \Magento\Tax\Model\ResourceModel\TaxClass\CollectionFactory
+     */
+    private $_classesFactory;
 
     /**
      * Initialize dependencies.

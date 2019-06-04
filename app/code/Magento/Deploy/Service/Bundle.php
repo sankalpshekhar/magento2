@@ -75,6 +75,11 @@ class Bundle
         self::ASSET_TYPE_JS,
         self::ASSET_TYPE_HTML
     ];
+    
+    /**
+     * @var BundleConfig
+     */
+    private $bundleConfig;
 
     /**
      * Bundle constructor

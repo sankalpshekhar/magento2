@@ -13,6 +13,16 @@ class Options implements \Magento\Framework\Data\OptionSourceInterface
     protected $options;
 
     /**
+     * @var \Magento\Catalog\Model\ResourceModel\Product
+     */
+    private $product;
+
+    /**
+     * @var \Magento\Eav\Model\ResourceModel\Entity\Attribute\Set\CollectionFactory
+     */
+    private $collectionFactory;
+
+    /**
      * @param \Magento\Eav\Model\ResourceModel\Entity\Attribute\Set\CollectionFactory $collectionFactory
      * @param \Magento\Catalog\Model\ResourceModel\Product $product
      */

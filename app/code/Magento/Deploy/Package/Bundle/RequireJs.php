@@ -103,6 +103,11 @@ class RequireJs implements BundleInterface
      * @var string
      */
     private $pathToBundleDir;
+    
+    /**
+     * @var Filesystem
+     */
+    private $filesystem;
 
     /**
      * Bundle constructor

@@ -33,6 +33,11 @@ class Options implements OptionSourceInterface
     protected $systemStore;
 
     /**
+     * @var array
+     */
+    private $options;
+
+    /**
      * Constructor
      *
      * @param SystemStore $systemStore

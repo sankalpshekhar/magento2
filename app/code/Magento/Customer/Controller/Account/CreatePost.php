@@ -142,6 +142,16 @@ class CreatePost extends AbstractAccount implements CsrfAwareActionInterface, Ht
     private $customerRepository;
 
     /**
+     * @var StoreManagerInterface
+     */
+    private $storeManager;
+
+    /**
+     * @var ScopeConfigInterface
+     */
+    private $scopeConfig;
+
+    /**
      * @param Context $context
      * @param Session $customerSession
      * @param ScopeConfigInterface $scopeConfig

@@ -170,6 +170,11 @@ class Onepage
     protected $totalsCollector;
 
     /**
+     * @var \Magento\Framework\Encryption\EncryptorInterface
+     */
+    private $_encryptor;
+
+    /**
      * @param \Magento\Framework\Event\ManagerInterface $eventManager
      * @param \Magento\Checkout\Helper\Data $helper
      * @param \Magento\Customer\Model\Url $customerUrl

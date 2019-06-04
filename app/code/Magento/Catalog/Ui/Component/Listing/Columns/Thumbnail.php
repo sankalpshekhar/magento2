@@ -21,6 +21,16 @@ class Thumbnail extends \Magento\Ui\Component\Listing\Columns\Column
     const ALT_FIELD = 'name';
 
     /**
+     * @var \Magento\Framework\UrlInterface
+     */
+    private $urlBuilder;
+
+    /**
+     * @var \Magento\Catalog\Helper\Image
+     */
+    private $imageHelper;
+
+    /**
      * @param ContextInterface $context
      * @param UiComponentFactory $uiComponentFactory
      * @param \Magento\Catalog\Helper\Image $imageHelper

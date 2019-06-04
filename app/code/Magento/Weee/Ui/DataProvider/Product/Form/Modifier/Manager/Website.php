@@ -22,6 +22,21 @@ class Website
      * @var array
      */
     private $websites;
+    
+    /**
+     * @var DirectoryHelper
+     */
+    private $directoryHelper;
+    
+    /**
+     * @var StoreManagerInterface
+     */
+    private $storeManager;
+    
+    /**
+     * @var LocatorInterface
+     */
+    private $locator;
 
     /**
      * @param LocatorInterface $locator

@@ -20,6 +20,11 @@ class Validator extends \Zend_Validate_InArray
     protected $_eavData = null;
 
     /**
+     * @var array|null
+     */
+    private $_messageTemplates;
+
+    /**
      * @param \Magento\Eav\Helper\Data $eavData
      * @codeCoverageIgnore
      */
